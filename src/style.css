@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --textColor: white;
+  --hovering: #f5b754;
+  --mainfont: "Outfit", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar li {
+  list-style-type: none;
+  color: var(--textColor);
+}
+li a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+li a:hover {
+  color: var(--hovering);
+}
+
+.nav-item > a:hover {
+  color: var(--hovering);
+}
+.logo {
+  width: 150px;
+  height: 20px;
+}
+.contact-info1 {
+  padding-left: 8px;
+}
+li:nth-child(9) {
+  font-size: 13px;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: none;
+    position: fixed;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.hero{
+    margin-top: 290px;
+    margin-left: 360px;
+}
+.hero-title{
+    font-weight: 600;
+    font-size: 90px;
+    font-family: var(--mainfont);
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--textColor);
+}
+.hero-text{
+    font-family: var(--mainfont);
+    font-size: 24px;
+    font-weight: 400px;
+    color: var(--textColor);
+}
+.hero .btn{
+    padding: 14px 30px;
+    margin: 15px 15px 15px 0;
+    background-color: var(--hovering);
+    font-weight: 500;
+    border: 1px solid var(--hovering);
+    border-radius: 30px;
+}
+.hero .btn1{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.hero .btn:hover{
+background-color: white;
+}
+.hero .btn1:hover{
+    background-color: var(--hovering);
+}
+.hero-dot-play{
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 240px;
+}
+.hero-dots{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    align-items: center;
+    list-style: none;
+}
+.hero-dot{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.hero-dot:hover{
+    border: 1px solid var(--hovering);
+    background-color: var(--hovering);
+}
