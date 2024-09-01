@@ -32,7 +32,7 @@
   width: 250px;
   margin: 0 auto;
   padding-top: 230px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .hero-title {
   font-family: var(--mainfont);
@@ -97,11 +97,11 @@
 .about-section {
   background-color: var(--bodyColor);
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .about-text-box {
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .about-title1 {
   color: var(--textColor);
@@ -152,7 +152,7 @@
   margin: 0 auto;
   width: 38%;
   border-radius: 25px;
-  border: 2px solid var(--hovering);
+  /* border: 2px solid var(--hovering); */
 }
 .service-img {
   width: 100%;
@@ -208,7 +208,7 @@
 .service-btn {
   position: relative;
   bottom: 60px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,12 +280,9 @@
   color: var(--textColor);
   margin: 0 auto;
 }
-.cartype-img-main-holder {
-  border: 2px solid yellow;
-}
 .cartype-img-holder {
   width: 100%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .cartype-img {
   width: 100%;
@@ -311,7 +308,7 @@
 .cartype-btn {
   position: relative;
   bottom: 70px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,26 +409,26 @@
 .fa-icons::before {
   content: none !important;
 }
-.fa-icons{
+.fa-icons {
   border: 1px solid var(--hovering);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
-  margin-left: 10px; 
+  margin-left: 10px;
   cursor: pointer;
   margin-bottom: 15px;
 }
-.fa-icons:hover{
+.fa-icons:hover {
   background-color: var(--hovering);
 }
-.fa-icons i{
+.fa-icons i {
   color: white;
   padding: 2px;
   margin-left: 10px;
 }
-.footer-section p{
+.footer-section p {
   color: var(--textColor2);
   margin-bottom: 0 !important;
   padding-bottom: 15px;
