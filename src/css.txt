@@ -1,0 +1,183 @@
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #1b1b1b;
+  z-index: 10;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar.sticky {
+  position: fixed;
+  background-color: #1b1b1b;
+}
+.navbar li {
+  list-style-type: none;
+  color: var(--textColor);
+}
+li a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-family: var(--mainfont);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+li a:hover,
+nav a.active {
+  color: var(--hovering);
+}
+
+.logo {
+  width: 150px;
+  height: 20px;
+}
+.contact-info1 {
+  padding-left: 8px;
+}
+li:nth-child(9) {
+  font-size: 8px;
+}
+.hero-text-box{
+  padding-top: 150px;
+  border: 2px solid blue;
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 90px;
+  font-family: var(--mainfont);
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--textColor);
+}
+.hero-text {
+  font-family: var(--mainfont);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--textColor);
+}
+.hero .btn {
+  padding: 14px 30px;
+  margin: 15px 15px 15px 0;
+  background-color: var(--hovering);
+  font-weight: 500;
+  border: 1px solid var(--hovering);
+  border-radius: 30px;
+}
+.hero .btn1 {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.hero .btn:hover {
+  background-color: white;
+}
+.hero .btn1:hover {
+  background-color: var(--hovering);
+}
+.hero-dot-play {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 240px;
+}
+.hero-dots {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  align-items: center;
+  list-style: none;
+}
+.hero-dot {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.hero-dot:hover {
+  border: 1px solid var(--hovering);
+  background-color: var(--hovering);
+}
+#about-section {
+  background-color: #1b1b1b;
+}
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+
+
+      <section id="carstype-section" className="carstype-section pt-5 pb-5">
+        <div className="container pt-5 pb-5">
+          <div className="cartype-title-box">
+            <p className="service-title1">{carsType1.text}</p>
+            <p className="service-title2">
+              {carsType2.text1}
+              <span> {carsType2.text2}</span>
+            </p>
+          </div>
+          <div className="row g-3 g-lg-5 cartype-img-main-holder">
+            <div className="cartype-img-holder col-md-4">
+              <img src={carsType4} className="cartype-img" />
+              <div className="cartype-btn">
+                <button type="button" className="cartype-names">
+                  {carsType3.text6}
+                </button>
+              </div>
+            </div>
+            <div className="cartype-img-holder col-md-4">
+              <img src={carsType5} className="cartype-img" />
+              <div className="cartype-btn">
+                <button type="button" className="cartype-names">
+                  {carsType3.text4}
+                </button>
+              </div>
+            </div>
+            <div className="cartype-img-holder col-md-4">
+              <img src={carsType6} className="cartype-img" />
+              <div className="cartype-btn">
+                <button type="button" className="cartype-names">
+                  {carsType3.text3}
+                </button>
+              </div>
+            </div>
+            <div className="cartype-img-holder col-md-4">
+              <img src={carsType7} className="cartype-img" />
+              <div className="cartype-btn">
+                <button type="button" className="cartype-names">
+                  {carsType3.text1}
+                </button>
+              </div>
+            </div>
+            <div className="cartype-img-holder col-md-4">
+              <img src={carsType8} className="cartype-img" />
+              <div className="cartype-btn">
+                <button type="button" className="cartype-names">
+                  {carsType3.text5}
+                </button>
+              </div>
+            </div>
+            <div className="cartype-img-holder col-md-4">
+              <img src={carsType9} className="cartype-img" />
+              <div className="cartype-btn">
+                <button type="button" className="cartype-names">
+                  {carsType3.text2}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="bg-img-window"></div>

@@ -2,9 +2,10 @@ import React from "react";
 
 function Navbar(props) {
   const data1 = props.data1;
+  
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar-desktop pt-4">
         <div className="container">
           <div>
             <li>
@@ -12,11 +13,13 @@ function Navbar(props) {
             </li>
           </div>
           <div className="d-flex gap-5">
-            <li className="nav-link active" aria-current="page">
-              <a href="#">{data1[1]}</a>
+            <li>
+              <a href="#hero-section" className="active">
+                {data1[1]}
+              </a>
             </li>
             <li>
-              <a href="#">{data1[2]}</a>
+              <a href="#about-section">{data1[2]}</a>
             </li>
             <li>
               <a href="#">{data1[3]}</a>
@@ -44,13 +47,16 @@ function Navbar(props) {
               ></i>
             </li>
             <div className="contact-info1">
-              <li >{data1[7]}</li>
+              <li>{data1[7]}</li>
               <li>
                 <a href="#">{data1[8]}</a>
               </li>
             </div>
           </div>
         </div>
+      </nav>
+      <nav className="navbar-mobile">
+
       </nav>
     </>
   );

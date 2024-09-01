@@ -1,9 +1,35 @@
-import React from 'react'
+import React from "react";
 
-export const About = () => {
+const About = ({ aboutData }) => {
+  const [about1, about2, about3] = aboutData;
   return (
     <>
-      <div>About</div>
+      <section id="about-section" className="about-section">
+        <div className="container">
+          <div className="row pt-5 pb-5 about-text-box">
+            <div className="col-md-6 pt-5">
+              <p className="about-title1">
+                {about1.text1}
+                <span className="about-title2"> {about1.text2} </span>
+              </p>
+              <p className="about-text">{about1.text3}</p>
+              <p className="about-text">{about2.text1}</p>
+              <p className="about-text">{about2.text2}</p>
+
+              <button type="button" className="btn">
+                Read More
+              </button>
+            </div>
+            <div className="col-md-6 pt-4">
+              <div className="about-img-holder">
+                <img src={about3} className="about-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
-}
+};
+
+export default About;
