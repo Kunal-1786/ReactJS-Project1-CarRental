@@ -118,22 +118,22 @@ function Contact({ contactData }) {
                 <p className="contact-subtitle2">{contactData15.text1}</p>
                 <ul className="contact-text">
                   <li>
-                    <a href="#">{contactData15.text2}</a>
+                    <a href="#hero-section">{contactData15.text2}</a>
                   </li>
                   <li>
-                    <a href="#">{contactData15.text3}</a>
+                    <a href="#about-section">{contactData15.text3}</a>
                   </li>
                   <li>
-                    <a href="#">{contactData15.text4}</a>
+                    <a href="#services-section">{contactData15.text4}</a>
                   </li>
                   <li>
-                    <a href="#">{contactData15.text5}</a>
+                    <a href="#cars-section">{contactData15.text5}</a>
                   </li>
                   <li>
-                    <a href="#">{contactData15.text6}</a>
+                    <a href="#cartype-section">{contactData15.text6}</a>
                   </li>
                   <li>
-                    <a href="#">{contactData15.text7}</a>
+                    <a href="#contact-section">{contactData15.text7}</a>
                   </li>
                 </ul>
               </div>

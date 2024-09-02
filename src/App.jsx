@@ -17,7 +17,6 @@ import cars2 from "./assets/cars2.jpg";
 import cars3 from "./assets/cars3.jpg";
 import cars4 from "./assets/cars4.jpg";
 import cars5 from "./assets/cars5.jpg";
-import cars6 from "./assets/cars6.jpg";
 
 import CarsType from "./CarsType";
 import carsType1 from "./assets/carstype1.jpg";
@@ -35,6 +34,9 @@ import carsLogo4 from "./assets/carlogo4.png";
 import carsLogo5 from "./assets/carlogo5.png";
 import carsLogo6 from "./assets/carlogo6.png";
 import carsLogo7 from "./assets/carlogo7.png";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const menu = [
@@ -55,19 +57,19 @@ function App() {
     { text1: "Rental Car", text2: "Audi RS7 Sportback" },
   ];
 
-    const aboutData = [
-      {
-        text1: "We Are More Than",
-        text2: "A Car Rental Company",
-        text3:
-          "Car repair quisque sodales dui ut varius vestibulum drana tortor turpis porttiton tellus eu euismod nisl massa nutodio in the miss volume place urna lacinia eros nunta urna mauris vehicula rutrum in the miss on volume interdum.",
-      },
-      {
-        text1: "Sports and Luxury Cars",
-        text2: "Economy Cars ",
-      },
-      aboutimg,
-    ];
+  const aboutData = [
+    {
+      text1: "We Are More Than",
+      text2: "A Car Rental Company",
+      text3:
+        "Car repair quisque sodales dui ut varius vestibulum drana tortor turpis porttiton tellus eu euismod nisl massa nutodio in the miss volume place urna lacinia eros nunta urna mauris vehicula rutrum in the miss on volume interdum.",
+    },
+    {
+      text1: "Sports and Luxury Cars",
+      text2: "Economy Cars ",
+    },
+    aboutimg,
+  ];
 
   const serviceData = [
     { text: "WHAT WE DO" },
@@ -77,7 +79,7 @@ function App() {
     { text: "Airport Transfer" },
     serviceimg1,
     serviceimg2,
-    serviceimg3
+    serviceimg3,
   ];
 
   const carsData = [
@@ -85,26 +87,25 @@ function App() {
     { text1: "Luxury", text2: "Car Fleet" },
     { text: "Luxury Car Fleet" },
     {
-      text1: "Bentley Continental",
       text2: "Aston Martin DBX",
       text3: "Audi RS7 Sportback",
       text4: "Rolls Royce Cullinan",
       text5: "Lamborghini Urus",
       text6: "Bugatti Mistral W16",
     },
-    {text:"/day"},
-    {text1: "$600",
+    { text: "/day" },
+    {
+      text1: "$600",
       text2: "$800",
-      text3: "$500",
       text4: "$700",
       text5: "$900",
-      text6: "$750"},
-      cars1,
-      cars2,
-      cars3,
-      cars4,
-      cars5,
-      cars6
+      text6: "$750",
+    },
+    cars1,
+    cars2,
+    cars3,
+    cars4,
+    cars5,
   ];
 
   const carsTypeData = [
@@ -123,7 +124,7 @@ function App() {
     carsType3,
     carsType4,
     carsType5,
-    carsType6
+    carsType6,
   ];
 
   const contactData = [
@@ -152,12 +153,21 @@ function App() {
       text6: "Car Types",
       text7: "Contact",
     },
-    {text:"Subscribe"},
-    {text:"Want to be notified about our services. Just sign up and we'll send you a notification by email."},
-    {text:"©2024 All rights reserved."}
+    { text: "Subscribe" },
+    {
+      text: "Want to be notified about our services. Just sign up and we'll send you a notification by email.",
+    },
+    { text: "©2024 All rights reserved." },
   ];
 
   const [heroCount, setHeroCount] = useState(0);
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: false,
+      });
+    }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {

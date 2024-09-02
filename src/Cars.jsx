@@ -1,4 +1,12 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 const Cars = ({ carsData }) => {
   const [
@@ -13,7 +21,6 @@ const Cars = ({ carsData }) => {
     cars9,
     cars10,
     cars11,
-    cars12,
   ] = carsData;
   return (
     <>
@@ -27,123 +34,114 @@ const Cars = ({ carsData }) => {
             </p>
           </div>
 
-          <div>
-            <div
-              id="carouselExampleControls"
-              className="carousel slide"
-              data-ride="carousel"
+          <div className="swiper-container-wrapper">
+            <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+              }}
+              pagination={{ el: ".swiper-pagination", clickable: true }}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                clickable: true,
+              }}
+              breakpoints={{
+                768: {
+                  slidesPerView: 1,
+                },
+                769: {
+                  slidesPerView: 3,
+                },
+                992: {
+                  slidesPerView: 3,
+                },
+              }}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+              className="swiper-container"
             >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="card">
-                        <img className="card-img-top" src={cars7} />
-                        <div className="card-body">
-                          <h5 className="card-title">{cars4.text5}</h5>
-                          <p className="card-text">
-                            {cars6.text6}
-                            <span>{cars5.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="card">
-                        <img className="card-img-top" src={cars8} />
-                        <div className="card-body">
-                          <h5 className="card-title">{cars4.text3}</h5>
-                          <p className="card-text">
-                            {cars6.text3}
-                            <span>{cars5.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+              <SwiperSlide>
+                <div
+                  className="card">
+                  <img src={cars7} className="card-img-top" />
+                  <div className="card-body">
+                    <h5 className="card-title">{cars4.text5}</h5>
+                    <p className="card-text">
+                      {cars6.text6}
+                      <span> {cars5.text}</span>
+                    </p>
                   </div>
                 </div>
-                <div className="carousel-item">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="card">
-                        <img className="card-img-top" src={cars9} />
-                        <div className="card-body">
-                          <h5 className="card-title">Card title</h5>
-                          <p className="card-text">
-                            {cars6.text3}
-                            <span>{cars5.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="card">
-                        <img className="card-img-top" src={cars10} />
-                        <div className="card-body">
-                          <h5 className="card-title">Card title</h5>
-                          <p className="card-text">
-                            {cars6.text3}
-                            <span>{cars5.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="card">
+                  <img src={cars8} className="card-img-top" />
+                  <div className="card-body">
+                    <h5 className="card-title">{cars4.text3}</h5>
+                    <p className="card-text">
+                      {cars6.text4}
+                      <span> {cars5.text}</span>
+                    </p>
                   </div>
                 </div>
-                <div className="carousel-item">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="card">
-                        <img className="card-img-top" src={cars11} />
-                        <div className="card-body">
-                          <h5 className="card-title">Card title</h5>
-                          <p className="card-text">
-                            {cars6.text3}
-                            <span>{cars5.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="card">
-                        <img className="card-img-top" src={cars12} />
-                        <div className="card-body">
-                          <h5 className="card-title">Card title</h5>
-                          <p className="card-text">
-                            {cars6.text3}
-                            <span>{cars5.text}</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="card">
+                  <img src={cars9} className="card-img-top" />
+                  <div className="card-body">
+                    <h5 className="card-title">{cars4.text2}</h5>
+                    <p className="card-text">
+                      {cars6.text1}
+                      <span> {cars5.text}</span>
+                    </p>
                   </div>
                 </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="card">
+                  <img src={cars10} className="card-img-top" />
+                  <div className="card-body">
+                    <h5 className="card-title">{cars4.text6}</h5>
+                    <p className="card-text">
+                      {cars6.text5}
+                      <span> {cars5.text}</span>
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div
+                  className="card">
+                  <img src={cars11} className="card-img-top" />
+                  <div className="card-body">
+                    <h5 className="card-title">{cars4.text4}</h5>
+                    <p className="card-text">
+                      {cars6.text2}
+                      <span> {cars5.text}</span>
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <div className="slider-controller">
+                <div className="swiper-button-prev slide-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div className="swiper-button-next slide-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div className="swiper-pagination"></div>
               </div>
-              <a
-                className="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="sr-only">Next</span>
-              </a>
-            </div>
+            </Swiper>
           </div>
         </div>
       </section>

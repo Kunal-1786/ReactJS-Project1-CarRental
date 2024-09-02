@@ -41,11 +41,11 @@ const Hero = ({ heroData, heroCount, setHeroCount }) => {
             ></li>
             <li
               onClick={() => setHeroCount(1)}
-              className={heroCount === 0 ? "hero-dot orange" : "hero-dot"}
+              className={heroCount === 1 ? "hero-dot orange" : "hero-dot"}
             ></li>
             <li
               onClick={() => setHeroCount(2)}
-              className={heroCount === 0 ? "hero-dot orange" : "hero-dot"}
+              className={heroCount === 2 ? "hero-dot orange" : "hero-dot"}
             ></li>
           </ul>
         </div>

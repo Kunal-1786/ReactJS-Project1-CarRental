@@ -1,62 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar(props) {
   const data1 = props.data1;
-  
+  const [menuHeight, setMenuHeight] = useState("0px");
+
+  const toggleMenu = () => {
+    setMenuHeight(menuHeight === "0px" ? "300px" : "0px");
+  };
   return (
     <>
-      <nav className="navbar-desktop pt-4">
-        <div className="container">
-          <div>
-            <li>
-              <img src={data1[0]} alt="Logo" className="logo" />
-            </li>
-          </div>
-          <div className="d-flex gap-5">
-            <li>
-              <a href="#hero-section" className="active">
-                {data1[1]}
-              </a>
-            </li>
-            <li>
-              <a href="#about-section">{data1[2]}</a>
-            </li>
-            <li>
-              <a href="#">{data1[3]}</a>
-            </li>
-            <li>
-              <a href="#">{data1[4]}</a>
-            </li>
-            <li>
-              <a href="#">{data1[5]}</a>
-            </li>
-            <li>
-              <a href="#">{data1[6]}</a>
-            </li>
-          </div>
-          <div className="d-flex gap-2">
-            <li
-              style={{
-                border: "1px solid #f5b754",
-                borderRadius: "50%",
-              }}
-            >
+      <nav className="navbar">
+        <div className="header-logo">
+          <img src={data1[0]} className="header-logo-img" alt="Logo" />
+        </div>
+        <ul
+          id="menuList"
+          style={{
+            maxHeight: menuHeight,
+            transition: "max-height 0.3s ease-out",
+          }}
+        >
+          <li>
+            <a href="#hero-section">{data1[1]}</a>
+          </li>
+          <li>
+            <a href="#about-section">{data1[2]}</a>
+          </li>
+          <li>
+            <a href="#services-section">{data1[3]}</a>
+          </li>
+          <li>
+            <a href="#cars-section">{data1[4]}</a>
+          </li>
+          <li>
+            <a href="#carstype-section">{data1[5]}</a>
+          </li>
+          <li>
+            <a href="#contact-section">{data1[6]}</a>
+          </li>
+          <li>
+            <div className="header-fa-icons">
               <i
                 className="fa-solid fa-phone-volume"
-                style={{ color: "#ffffff", margin: "15px" }}
+                style={{ color: "#ffffff" }}
               ></i>
-            </li>
-            <div className="contact-info1">
-              <li>{data1[7]}</li>
-              <li>
-                <a href="#">{data1[8]}</a>
-              </li>
             </div>
+          </li>
+          <div>
+            <li className="header-contact">{data1[7]}</li>
+            <li>
+              <a href="#">{data1[8]}</a>
+            </li>
           </div>
+        </ul>
+        <div className="menu-icon pe-3">
+          <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
         </div>
-      </nav>
-      <nav className="navbar-mobile">
-
       </nav>
     </>
   );

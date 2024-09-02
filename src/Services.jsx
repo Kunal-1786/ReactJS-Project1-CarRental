@@ -9,8 +9,7 @@ function Services({serviceData}) {
       service5,
       service6,
       service7,
-      service8,
-      service9
+      service8
     ] = serviceData;
   return (
     <>
@@ -23,8 +22,14 @@ function Services({serviceData}) {
               <span> {service2.text2}</span>
             </p>
           </div>
-          <div className="row g-3 g-lg-5 service-img-main-holder">
-            <div className="service-img-holder col-md-4">
+          <div
+            className="row g-3 g-lg-5 service-img-main-holder"
+            data-aos="fade-right"
+          >
+            <div
+              className="service-img-holder col-md-4"
+              data-aos="zoom-in-right"
+            >
               <img src={service6} className="service-img" />
               <div className="service-btn">
                 <button type="button" className="service-names">
@@ -32,7 +37,7 @@ function Services({serviceData}) {
                 </button>
               </div>
             </div>
-            <div className="service-img-holder col-md-4">
+            <div className="service-img-holder col-md-4" data-aos="zoom-in">
               <img src={service7} className="service-img" />
               <div className="service-btn">
                 <button type="button" className="service-names">
@@ -40,7 +45,10 @@ function Services({serviceData}) {
                 </button>
               </div>
             </div>
-            <div className="service-img-holder col-md-4">
+            <div
+              className="service-img-holder col-md-4"
+              data-aos="zoom-in-left"
+            >
               <img src={service8} className="service-img" />
               <div className="service-btn">
                 <button type="button" className="service-names">
