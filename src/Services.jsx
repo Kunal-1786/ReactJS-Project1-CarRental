@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function Services({serviceData}) {
-    const [
-      service1,
-      service2,
-      service3,
-      service4,
-      service5,
-      service6,
-      service7,
-      service8
-    ] = serviceData;
+function Services({ serviceData }) {
+  const [
+    service1,
+    service2,
+    service3,
+    service4,
+    service5,
+    service6,
+    service7,
+    service8,
+  ] = serviceData;
   return (
     <>
       <section id="services-section" className="services-section pt-5 pb-5">
@@ -22,14 +22,9 @@ function Services({serviceData}) {
               <span> {service2.text2}</span>
             </p>
           </div>
-          <div
-            className="row g-3 g-lg-5 service-img-main-holder"
-            data-aos="fade-right"
-          >
-            <div
-              className="service-img-holder col-md-4"
-              data-aos="zoom-in-right"
-            >
+          <div className="row g-3 g-lg-5 service-img-main-holder">
+            <div className="service-img-holder col-md-4">
+              {/* data-aos="zoom-in-right" */}
               <img src={service6} className="service-img" />
               <div className="service-btn">
                 <button type="button" className="service-names">
@@ -37,7 +32,8 @@ function Services({serviceData}) {
                 </button>
               </div>
             </div>
-            <div className="service-img-holder col-md-4" data-aos="zoom-in">
+            <div className="service-img-holder col-md-4">
+              {/* data-aos="zoom-in" */}
               <img src={service7} className="service-img" />
               <div className="service-btn">
                 <button type="button" className="service-names">
@@ -45,10 +41,8 @@ function Services({serviceData}) {
                 </button>
               </div>
             </div>
-            <div
-              className="service-img-holder col-md-4"
-              data-aos="zoom-in-left"
-            >
+            <div className="service-img-holder col-md-4">
+              {/* data-aos="zoom-in-left" */}
               <img src={service8} className="service-img" />
               <div className="service-btn">
                 <button type="button" className="service-names">
@@ -64,4 +58,4 @@ function Services({serviceData}) {
   );
 }
 
-export default Services
+export default Services;

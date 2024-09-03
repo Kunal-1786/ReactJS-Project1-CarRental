@@ -25,7 +25,8 @@ const CarsType = ({ carsTypeData }) => {
             </p>
           </div>
           <div className="row g-3 g-lg-5 cartype-img-main-holder">
-            <div className="cartype-img-holder col-md-4" data-aos="flip-left">
+            <div className="cartype-img-holder col-md-4">
+              {/* data-aos="flip-left" */}
               <img src={carsType4} className="cartype-img" />
               <div className="cartype-btn">
                 <button type="button" className="cartype-names">
@@ -33,7 +34,8 @@ const CarsType = ({ carsTypeData }) => {
                 </button>
               </div>
             </div>
-            <div className="cartype-img-holder col-md-4" data-aos="flip-up">
+            <div className="cartype-img-holder col-md-4">
+              {/* data-aos="flip-up" */}
               <img src={carsType5} className="cartype-img" />
               <div className="cartype-btn">
                 <button type="button" className="cartype-names">
@@ -41,7 +43,8 @@ const CarsType = ({ carsTypeData }) => {
                 </button>
               </div>
             </div>
-            <div className="cartype-img-holder col-md-4" data-aos="flip-right">
+            <div className="cartype-img-holder col-md-4">
+              {/* data-aos="flip-right" */}
               <img src={carsType6} className="cartype-img" />
               <div className="cartype-btn">
                 <button type="button" className="cartype-names">
@@ -49,7 +52,8 @@ const CarsType = ({ carsTypeData }) => {
                 </button>
               </div>
             </div>
-            <div className="cartype-img-holder col-md-4" data-aos="flip-left">
+            <div className="cartype-img-holder col-md-4">
+              {/* data-aos="flip-left" */}
               <img src={carsType7} className="cartype-img" />
               <div className="cartype-btn">
                 <button type="button" className="cartype-names">
@@ -57,7 +61,8 @@ const CarsType = ({ carsTypeData }) => {
                 </button>
               </div>
             </div>
-            <div className="cartype-img-holder col-md-4" data-aos="flip-down">
+            <div className="cartype-img-holder col-md-4">
+              {/* data-aos="flip-down" */}
               <img src={carsType8} className="cartype-img" />
               <div className="cartype-btn">
                 <button type="button" className="cartype-names">
@@ -65,7 +70,8 @@ const CarsType = ({ carsTypeData }) => {
                 </button>
               </div>
             </div>
-            <div className="cartype-img-holder col-md-4" data-aos="flip-right">
+            <div className="cartype-img-holder col-md-4">
+              {/* data-aos="flip-right" */}
               <img src={carsType9} className="cartype-img" />
               <div className="cartype-btn">
                 <button type="button" className="cartype-names">

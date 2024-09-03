@@ -7,7 +7,8 @@ const About = ({ aboutData }) => {
       <section id="about-section" className="about-section">
         <div className="container">
           <div className="row pt-5 pb-5 about-text-box">
-            <div className="col-md-6 pt-5" data-aos="fade-right">
+            <div className="col-md-6 pt-5">
+              {/* data-aos="zoom-in-left" */}
               <p className="about-title1">
                 {about1.text1}
                 <span className="about-title2"> {about1.text2} </span>
@@ -36,7 +37,8 @@ const About = ({ aboutData }) => {
                 Read More
               </button>
             </div>
-            <div className="col-md-6 pt-4" data-aos="fade-left">
+            <div className="col-md-6 pt-4">
+              {/* data-aos="zoom-in-right" */}
               <div className="about-img-holder">
                 <img src={about3} className="about-img" />
               </div>
