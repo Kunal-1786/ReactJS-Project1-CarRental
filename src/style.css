@@ -673,7 +673,7 @@ Media-Rule-768px
   .hero-text {
     font-size: 24px;
   }
-  
+
   .hero-dot-play {
     margin-top: 150px;
   }
@@ -724,9 +724,9 @@ Media-Rule-992px
     height: 92vh;
   }
   .hero-text-box {
-  width: 800px;
-  margin: 0 auto;
-  padding-top: 180px;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 180px;
   }
   .hero-title {
     font-size: 90px;
@@ -735,7 +735,7 @@ Media-Rule-992px
     font-size: 24px;
   }
   .hero-dot-play {
-    margin-top: 90px
+    margin-top: 90px;
   }
   .service-names {
     padding: 8px 35px;
@@ -784,4 +784,17 @@ Media-Rule-1440px
   .card {
     width: 100%;
   }
+}
+/* ------------------------------------------------------------ 
+Media-Rule-992px
+----------------------------------------------------------------
+*/
+@media (min-width: 1920px) {
+  .hero-dots {
+    padding-top: 200px;
+  }
+  .hero-text-box {
+  padding-top: 250px;
+  margin-left: 500px;
+}
 }
